@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- DOCUMENT TITLE -->
+		<title>Pet Store</title>
+
+		<!-- FAVICON OR WEBSITE LOGO -->
+		<link rel="icon" type="image/x-icon" href="imgs/finalogo.png" />
+
+		<!-- STYLESHEET WE USED -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- SCRIPT FOR FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/dcbe9444d8.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- MOBILE VIEW -->
+		<nav>
+			<div class="mobile__nav">
+				<ul class="mobile__links">
+					<li class="link"><a href="/index.html"> HOME </a></li>
+					<li class="link"><a href="/about.html"> ABOUT </a></li>
+					<li class="link"><a href="/products.html"> PRODUCTS </a></li>
+					<li class="link"><a href="/contact.html"> CONTACT </a></li>
+					<li class="link"><a href="/mycart.html">MY CART</a></li>
+				</ul>
+
+				<!-- EXIT ICON FOR MOBILE VIEW -->
+				<i class="fa-solid fa-x"></i>
+			</div>
+
+			<!-- DESKTOP VIEW -->
+			<div class="nav__wrapper">
+				<div class="logo__container">
+					<a href="index.html"> <img src="./imgs/finalogo.png" alt="logo" /> </a>
+				</div>
+
+				<!-- NAVIGATION BAR FOR ABOUT US -->
+				<ul class="links">
+					<li class="link"><a href="/index.html"> HOME </a></li>
+					<li class="link"><a href="/about.html"> ABOUT </a></li>
+					<li class="link"><a href="/products.html"> PRODUCTS </a></li>
+					<li class="link"><a href="/contact.html"> CONTACT </a></li>
+					<li class="link"><a href="/mycart.html">MY CART</a></li>
+				</ul>
+
+				<!-- NAVIGATION ICONS -->
+				<div class="nav__icons">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+
+		<main class="basket__container">
+			<div class="basket">
+				<div class="basket-module">
+					<label for="promo-code">Enter a promotional code</label>
+					<input id="promo-code" type="text" name="promo-code" maxlength="20" class="promo-code-field" />
+					<button class="ApplyButton">Apply</button>
+				</div>
+
+				<div class="basket-labels">
+					<ul>
+						<li class="item item-heading">Item</li>
+						<li class="price">Price</li>
+						<li class="quantity">Quantity</li>
+						<li class="subtotal">Subtotal</li>
+					</ul>
+				</div>
+
+				<div class="basket-product">
+					<div class="item">
+						<div class="product-image">
+							<img src="imgs/mycart1.png" alt="mycart1" class="product-frame" />
+						</div>
+
+						<div class="product-details">
+							<h1>
+								<strong><span class="item-quantity"></span> Pedigree </strong> Home Style Chicken Wet
+								For Adult Food
+							</h1>
+							<p><strong>400g</strong></p>
+							<p>Product Code - 33044</p>
+						</div>
+					</div>
+
+					<div class="price">150.00</div>
+					<div class="quantity">
+						<input type="number" value="1" min="1" class="quantity-field" />
+					</div>
+
+					<div class="subtotal">150.00</div>
+					<div class="remove">
+						<button class="button">REMOVE</button>
+					</div>
+				</div>
+
+				<div class="basket-product">
+					<div class="item">
+						<div class="product-image">
+							<img src="imgs/mycart2.png" alt="mycart2" class="product-frame" />
+						</div>
+
+						<div class="product-details">
+							<h1>
+								<strong><span class="item-quantity"></span> Special Cat </strong> Beef & Liver For Adult
+								Cat
+							</h1>
+							<p><strong>400g</strong></p>
+							<p>Product Code - 55050</p>
+						</div>
+					</div>
+
+					<div class="price">150.00</div>
+					<div class="quantity">
+						<input type="number" value="1" min="1" class="quantity-field" />
+					</div>
+
+					<div class="subtotal">150.00</div>
+					<div class="remove">
+						<button class="button">REMOVE</button>
+					</div>
+				</div>
+			</div>
+
+			<aside>
+				<div class="summary">
+					<div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+					<div class="summary-subtotal">
+						<div class="subtotal-title">Subtotal</div>
+						<div class="subtotal-value final-value" id="basket-subtotal">300.00</div>
+						<div class="summary-promo hide">
+							<div class="promo-title">Promotion</div>
+							<div class="promo-value final-value" id="basket-promo"></div>
+						</div>
+					</div>
+
+					<div class="summary-delivery">
+						<select name="delivery-collection" class="summary-delivery-selection">
+							<option value="0" selected="selected">Select a Category</option>
+							<option value="Wet and Dry Food">Wet and Dry Food</option>
+							<option value="Treats">Treats</option>
+							<option value="Fish Food">Fish Food</option>
+						</select>
+					</div>
+
+					<div class="summary-total">
+						<div class="total-title">Total</div>
+						<div class="total-value final-value" id="basket-total">300.00</div>
+					</div>
+
+					<div class="summary-checkout">
+						<button class="checkout-cta">Go to Secure Checkout</button>
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<!-- FOOTER AREA -->
+		<footer>
+			<div class="footerLinks__container">
+				<div>
+					<h2>PET SHOP INFO</h2>
+					<span><i class="fa-solid fa-location-dot"></i> Cagayan De Oro City, Philippines, 9000 </span>
+					<span><i class="fa-solid fa-phone-flip"></i> 0995-303-8732</span>
+					<span><i class="fa-solid fa-envelope"></i> da3amigospetshop@gmail.com </span>
+				</div>
+
+				<div>
+					<h2>PRODUCTS</h2>
+					<p><a href="./food.html"> Wet and Dry Food </a></p>
+					<p><a href="./treats.html"> Treats </a></p>
+					<p><a href="./fish.html"> Fish food </a></p>
+					<p>Parrot food <a href="#" style="color: red; font-style: italic"> (Coming soon) </a></p>
+				</div>
+
+				<div>
+					<h2>FURTHER INFO</h2>
+					<p><a href="./index.html"> Home </a></p>
+					<p><a href="./about.html"> About Us </a></p>
+					<p><a href="./contact.html"> Contact </a></p>
+					<p><a href="./mycart.html"> My Cart </a></p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="owners"><h3>&copy; SABEJON | GO | DELOS CIELOS</h3></div>
+
+		<!-- JAVASCRIPT -->
+		<script src="./index.js"></script>
+	</body>
+</html>
